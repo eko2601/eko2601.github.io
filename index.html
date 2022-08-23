@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portal Satu Data Kabupaten Musi Rawas</title>
+    <link rel="stylesheet" href="dist/tw-style.css" />
+  </head>
+  <body class="font-inter">
+    <header id="header-menu" class="w-full h-20 fixed-top">
+      <nav
+        class="relative w-full lg:w-12/12 xl:w-10/12 mx-auto h-full flex flex-wrap items-center justify-between text-white hover:text-gray-700 focus:text-gray-700 navbar navbar-expand-lg navbar-light bg-transparent navbar-scroll"
+      >
+        <div
+          class="w-full flex flex-wrap items-center justify-between px-6 my-auto"
+        >
+          <a
+            class="flex flex-initial w-48 items-center text-gray-900 hover:text-gray-900 focus:text-gray-900 mt-2 lg:mt-0 mr-1"
+            href="#"
+          >
+            <img
+              src="./dist/img/logo_kominfo.png"
+              class="w-full h-12"
+              alt=""
+              loading="lazy"
+            />
+          </a>
+          <button
+            class="navbar-toggler text-white border-0 hover:shadow-none hover:no-underline px-2.5 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="bars"
+              class="w-6"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+            >
+              <path
+                fill="currentColor"
+                d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+              ></path>
+            </svg>
+          </button>
+          <div
+            class="collapse navbar-collapse flex-grow items-center bg-sky-900 pl-5"
+            id="navbarSupportedContent"
+          >
+            <!-- Left links -->
+            <ul class="navbar-nav flex flex-col pl-0 list-style-none ml-auto">
+              <li class="nav-item p-2">
+                <a
+                  class="nav-link text-white hover:underline focus:underline p-0"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item p-2 dropdown relative">
+                <a
+                  class="nav-link text-white hover:underline focus:underline p-0"
+                  href="#"
+                  id="dropdownMenuOrganisasi"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Organisasi
+                </a>
+                <ul
+                  class="dropdown-menu min-w-max absolute hidden bg-sky-900 text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg shadow-white mt-1 m-0 bg-clip-padding border-none left-auto right-auto"
+                  aria-labelledby="dropdownMenuOrganisasi"
+                >
+                  <li>
+                    <a
+                      class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-white hover:underline"
+                      href="#"
+                      >Badan / Dinas</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-white hover:underline"
+                      href="#"
+                      >Kecamatan</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item p-2">
+                <a
+                  class="nav-link text-white hover:underline focus:underline"
+                  href="#"
+                  >Infografis</a
+                >
+              </li>
+              <li class="nav-item p-2 dropdown relative">
+                <a
+                  class="nav-link text-white hover:underline focus:underline p-0"
+                  href="#"
+                  id="dropdownMenuPublikasi"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Publikasi
+                </a>
+                <ul
+                  class="dropdown-menu min-w-max absolute hidden bg-sky-900 text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg shadow-white mt-1 m-0 bg-clip-padding border-none left-auto right-auto"
+                  aria-labelledby="dropdownMenuPublikasi"
+                >
+                  <li>
+                    <a
+                      class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-white hover:underline"
+                      href="#"
+                      >Perundang-Undangan</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-white hover:underline"
+                      href="#"
+                      >Dokumen Statistik Sektoral</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-white hover:underline"
+                      href="#"
+                      >Informasi Pelayanan Pemerintah Daerah</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item p-2 dropdown relative">
+                <a
+                  class="nav-link text-white hover:underline focus:underline p-0"
+                  href="#"
+                  id="dropdownMenuDokumentasi"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Dokumentasi
+                </a>
+                <ul
+                  class="dropdown-menu min-w-max absolute hidden bg-sky-900 text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg shadow-white mt-1 m-0 bg-clip-padding border-none left-auto right-auto"
+                  aria-labelledby="dropdownMenuDokumentasi"
+                >
+                  <li>
+                    <a
+                      class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-white hover:underline"
+                      href="#"
+                      >Video Kegiatan</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-white hover:underline"
+                      href="#"
+                      >Foto Kegiatan</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item p-2">
+                <a
+                  class="nav-link text-white hover:underline focus:underline"
+                  href="#"
+                  >Hubungi Kami</a
+                >
+              </li>
+            </ul>
+            <!-- Left links -->
+            <div class="flex space-x-5">
+              <button
+                type="button"
+                data-mdb-ripple="true"
+                data-mdb-ripple-color="light"
+                class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+              >
+                Masuk
+              </button>
+            </div>
+          </div>
+          <!-- Collapsible wrapper -->
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div class="w-full h-screen bg-sky-900 flex">
+        <div
+          class="mt-36 w-10/12 mx-auto my-auto h-3/5 flex flex-col md:flex-row"
+        >
+          <div class="w-full md:w-1/2 flex">
+            <div class="my-auto w-full h-auto animate-bounce">
+              <p
+                class="font-inter font-bold text-4xl md:text-3xl lg:text-4xl xl:text-5xl text-justify uppercase text-white"
+              >
+                portal satu data
+              </p>
+              <p
+                class="font-bold text-3xl md:text-2xl lg:text-3xl xl:text-4xl text-right uppercase text-white"
+              >
+                kabupaten musi rawas
+              </p>
+            </div>
+          </div>
+          <div class="md:w-1/2 md:mt-10 w-full md:flex">
+            <img
+              src="https://satudata.pandeglangkab.go.id/template/front/img/hero-img.png"
+              alt="gambar"
+              class="mx-auto md:my-auto"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-full lg:w-9/12 h-20 border-4 border-sky-900 mx-auto -mt-4 flex rounded-full px-2 lg:px-10 bg-white shadow-2xl shadow-black lg:mb-36 mb-20"
+      >
+        <input
+          type="text"
+          class="my-auto w-[80%] lg:w-9/12 h-14 hover:shadow-lg hover:shadow-sky-300 rounded-full text-xl px-4 focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 placeholder:italic mr-5 lg:mr-16"
+          placeholder="Cari Data ..."
+        />
+        <button
+          type="button"
+          data-mdb-ripple="true"
+          data-mdb-ripple-color="light"
+          class="my-auto w-[20%] lg:w-60 h-14 inline-block lg:px-6 py-2.5 bg-sky-900 text-white font-bold lg:text-xl text-sm leading-tight rounded-full shadow-md hover:shadow-lg"
+        >
+          Cari Data
+        </button>
+      </div>
+      <!--portal data-->
+      <div
+        class="w-full md:w-8/12 mx-auto font-bold text-2xl md:text-4xl text-center text-sky-900 underline"
+      >
+        Portal Data Kabupaten Musi Rawas
+      </div>
+      <div
+        class="mt-10 w-10/12 h-auto xl:w-8/12 sm:w-9/10 md:h-28 mx-auto text-sky-900 rounded-xl mb-14 shadow-md shadow-sky-500 transition-all delay-200 hover:scale-110 hover:transition-all hover:delay-200"
+      >
+        <div
+          class="flex flex-row flex-wrap h- w-full text-2xl justify-center gap-10 lg:gap-24 my-5"
+        >
+          <div class="my-auto">
+            <p class="text-center font-bold">300</p>
+            <p class="text-center">Dataset</p>
+          </div>
+          <div class="my-auto">
+            <p class="text-center font-bold">36</p>
+            <p class="text-center">OPD</p>
+          </div>
+          <div class="my-auto">
+            <p class="text-center font-bold">14</p>
+            <p class="text-center">Kecamatan</p>
+          </div>
+          <div class="my-auto">
+            <p class="text-center font-bold">30</p>
+            <p class="text-center">Kategori</p>
+          </div>
+          <div class="my-auto">
+            <p class="text-center font-bold">20</p>
+            <p class="text-center">Visual</p>
+          </div>
+        </div>
+      </div>
+      <!--akhir portal data-->
+
+      <!--Topik data-->
+      <div
+        class="mt-28 w-full md:w-8/12 mx-auto font-bold text-2xl md:text-4xl text-center text-sky-900 underline"
+      >
+        Topik Data Sektoral
+      </div>
+      <div
+        class="mt-10 w-10/12 h-auto flex flex-col mx-auto text-sky-900 transition-all ease-in-out delay-1000 mb-28"
+      >
+        <div
+          class="flex flex-row flex-wrap mx-auto w-full text-2xl justify-center gap-10 md:gap-24 mt-5"
+        >
+          <div class="my-auto">
+            <a href="">
+              <img
+                src="https://satudata.pandeglangkab.go.id/template/front/img/slidesektoral/iklim.png"
+                class="mx-auto"
+                alt="Geografi&iklim"
+              />
+              <p class="text-center">Geografi & Iklim</p>
+            </a>
+          </div>
+          <div class="my-auto">
+            <a href="">
+              <img
+                src="https://satudata.pandeglangkab.go.id/template/front/img/slidesektoral/pemerintahan.png"
+                class="mx-auto"
+                alt="Pemerintahan"
+              />
+              <p class="text-center">Pemerintahan</p>
+            </a>
+          </div>
+          <div class="my-auto">
+            <a href="">
+              <img
+                src="https://satudata.pandeglangkab.go.id/template/front/img/slidesektoral/sosial.png"
+                class="mx-auto"
+                alt="Sosial"
+              />
+              <p class="text-center">Sosial</p>
+            </a>
+          </div>
+          <div class="my-auto">
+            <a href="">
+              <img
+                src="https://satudata.pandeglangkab.go.id/template/front/img/slidesektoral/ekonomi.png"
+                class="mx-auto"
+                alt="Ekonomi"
+              />
+              <p class="text-center">Ekonomi</p>
+            </a>
+          </div>
+          <div class="my-auto">
+            <a href="">
+              <img
+                src="https://satudata.pandeglangkab.go.id/template/front/img/slidesektoral/insfratuktur.png"
+                class="mx-auto"
+                alt="Insfratruktur"
+              />
+              <p class="text-center">Infrastruktur</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!--akhir Topik data-->
+    </section>
+    <section class="bg-sky-900 w-full h-auto">
+      <div class="w-9/12 h-full mx-auto">
+        <div
+          class="text-center text-3xl md:text-4xl font-bold underline w-full text-white my-8 pt-16 lg:pt-28"
+        >
+          Link Terkait
+        </div>
+        <div
+          class="w-full h-full grid grid-cols-2 lg:grid-cols-4 gap-4 items-center"
+        >
+          <div class="my-auto w-[70%] bg-white h-20 rounded-md overflow-hidden">
+            <a href="">
+              <img
+                src="https://satudata.pandeglangkab.go.id/asset/foto_banner/PNGkemenkominfo.png"
+                class="mx-auto w-full h-full"
+                alt="Geografi&iklim"
+              />
+            </a>
+          </div>
+          <div class="my-auto w-[70%] bg-white h-20 rounded-md overflow-hidden">
+            <a href="">
+              <img
+                src="https://satudata.pandeglangkab.go.id/asset/foto_banner/PNGsipd.png"
+                class="mx-auto w-full h-full"
+                alt="Pemerintahan"
+              />
+            </a>
+          </div>
+          <div class="my-auto w-[70%] bg-white h-20 rounded-md overflow-hidden">
+            <a href="">
+              <img
+                src="https://satudata.pandeglangkab.go.id/asset/foto_banner/PNGkemdagri.png"
+                class="mx-auto w-full h-full"
+                alt="Sosial"
+              />
+            </a>
+          </div>
+          <div class="my-auto w-[70%] bg-white h-20 rounded-md overflow-hidden">
+            <a href="">
+              <img
+                src="https://satudata.pandeglangkab.go.id/asset/foto_banner/logo_menpan.png"
+                class="mx-auto w-full h-full"
+                alt="Ekonomi"
+              />
+            </a>
+          </div>
+          <div class="my-auto w-[70%] bg-white h-20 rounded-md overflow-hidden">
+            <a href="">
+              <img
+                src="https://satudata.pandeglangkab.go.id/asset/foto_banner/LOGO_Kemendikbud_RI.jpg"
+                class="mx-auto w-full h-full"
+                alt="Insfratruktur"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="h-20"></div>
+    </section>
+    <article class="mt-10 md:mt-16">
+      <div
+        class="w-10/12 mx-auto text-sky-900 underline font-bold text-3xl md:text-4xl mb-10"
+      >
+        Berita Utama
+      </div>
+      <div
+        class="w-10/12 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center mb-14"
+      >
+        <div class="w-11/12 h-96 rounded-lg shadow-md shadow-black">
+          <div class="w-full h-1/2 bg-white overflow-hidden">
+            <img
+              src="https://source.unsplash.com/1000x600"
+              class="w-full h-full rounded-t-lg"
+              alt="img-article"
+            />
+          </div>
+          <div class="text-slate-500 p-2 text-xs">Senin, 15 Agustus 2022</div>
+          <div class="text-lg font-bold text-sky-900 p-2">
+            <a href="" class="hover:underline">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
+              voluptatum!
+            </a>
+          </div>
+          <a href="" class="text-sky-900 pl-2 hover:underline">Read More ->></a>
+        </div>
+        <div class="w-11/12 h-96 rounded-lg shadow-md shadow-black">
+          <div class="w-full h-1/2 bg-white overflow-hidden">
+            <img
+              src="https://source.unsplash.com/1000x600"
+              class="w-full h-full rounded-t-lg"
+              alt="img-article"
+            />
+          </div>
+          <div class="text-slate-500 p-2 text-xs">Senin, 15 Agustus 2022</div>
+          <div class="text-lg font-bold text-sky-900 p-2">
+            <a href="" class="hover:underline">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
+              voluptatum!
+            </a>
+          </div>
+          <a href="" class="text-sky-900 pl-2 hover:underline">Read More ->></a>
+        </div>
+        <div class="w-11/12 h-96 rounded-lg shadow-md shadow-black">
+          <div class="w-full h-1/2 bg-white overflow-hidden">
+            <img
+              src="https://source.unsplash.com/1000x600"
+              class="w-full h-full rounded-t-lg"
+              alt="img-article"
+            />
+          </div>
+          <div class="text-slate-500 p-2 text-xs">Senin, 15 Agustus 2022</div>
+          <div class="text-lg font-bold text-sky-900 p-2">
+            <a href="" class="hover:underline">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
+              voluptatum!
+            </a>
+          </div>
+          <a href="" class="text-sky-900 pl-2 hover:underline">Read More ->></a>
+        </div>
+        <div class="w-11/12 h-96 rounded-lg shadow-md shadow-black">
+          <div class="w-full h-1/2 bg-white overflow-hidden">
+            <img
+              src="https://source.unsplash.com/1000x600"
+              class="w-full h-full rounded-t-lg"
+              alt="img-article"
+            />
+          </div>
+          <div class="text-slate-500 p-2 text-xs">Senin, 15 Agustus 2022</div>
+          <div class="text-lg font-bold text-sky-900 p-2">
+            <a href="" class="hover:underline">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
+              voluptatum!
+            </a>
+          </div>
+          <a href="" class="text-sky-900 pl-2 hover:underline">Read More ->></a>
+        </div>
+        <div class="w-11/12 h-96 rounded-lg shadow-md shadow-black">
+          <div class="w-full h-1/2 bg-white overflow-hidden">
+            <img
+              src="https://source.unsplash.com/1000x600"
+              class="w-full h-full rounded-t-lg"
+              alt="img-article"
+            />
+          </div>
+          <div class="text-slate-500 p-2 text-xs">Senin, 15 Agustus 2022</div>
+          <div class="text-lg font-bold text-sky-900 p-2">
+            <a href="" class="hover:underline">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
+              voluptatum!
+            </a>
+          </div>
+          <a href="" class="text-sky-900 pl-2 hover:underline">Read More ->></a>
+        </div>
+      </div>
+    </article>
+    <footer>
+      <div class="w-full h-auto bg-sky-900 pt-28">
+        <div
+          class="w-11/12 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:gap-10 text-white"
+        >
+          <div class="w-11/12 h-auto mb-10">
+            <h1 class="font-bold uppercase">Kontak Kami</h1>
+            <p class="text-justify mt-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+              autem soluta illum nihil vitae laudantium cupiditate, nam
+              doloremque eveniet quia corporis atque non vel sed.
+            </p>
+          </div>
+          <div class="w-11/12 h-auto mb-10">
+            <h1 class="font-bold uppercase">Kontak Kami</h1>
+            <p class="text-justify mt-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+              autem soluta illum nihil vitae laudantium cupiditate, nam
+              doloremque eveniet quia corporis atque non vel sed.
+            </p>
+          </div>
+          <div class="w-11/12 h-auto mb-10">
+            <h1 class="font-bold uppercase">Kontak Kami</h1>
+            <p class="text-justify mt-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+              autem soluta illum nihil vitae laudantium cupiditate, nam
+              doloremque eveniet quia corporis atque non vel sed.
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr class="h-1" />
+      <div class="bg-sky-900 w-full h-20 flex">
+        <div
+          class="w-9/12 mx-auto text-center my-auto text-sm text-white font-bold"
+        >
+          &copy; 2022 Musi Rawas Satu Data.
+          <p>support by : Diskominfotik Kabupaten Musi Rawas</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="../node_modules/tw-elements/dist/js/index.min.js"></script>
+  <script src="../public/dist/js/jquery-3.6.0.min.js"></script>
+  <script src="../public/dist/js/main.js"></script>
+</html>
